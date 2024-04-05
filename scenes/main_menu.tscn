@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp6r43mup4vvp"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_pg42k"]
+[ext_resource type="Texture2D" uid="uid://byxt6204uxl2d" path="res://assets/cooltext455292977633169.png" id="2_x5273"]
+
+[node name="main_menu" type="Node"]
+script = ExtResource("1_pg42k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -342.5
+offset_top = -65.5
+offset_right = 342.5
+offset_bottom = 65.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_x5273")
+
+[node name="EasyButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = 125.0
+offset_right = -23.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Easy Mode"
+
+[node name="HardButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 19.0
+offset_top = 123.0
+offset_right = 155.0
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hard Mode"
+
+[connection signal="pressed" from="EasyButton" to="." method="_on_easy_button_pressed"]
+[connection signal="pressed" from="HardButton" to="." method="_on_hard_button_pressed"]

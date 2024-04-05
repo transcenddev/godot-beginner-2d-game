@@ -1,0 +1,148 @@
+[gd_scene load_steps=21 format=3 uid="uid://bsof28oxhu8mu"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f10o0"]
+load_path = "res://.godot/imported/Apple.png-6cd13b76053e3795414d24077e6ea26f.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fu50o"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v03pb"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_koqy1"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s635g"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7urqp"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rk6c"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8aogn"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v77fk"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lngoo"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ropuy"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0j0nc"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y77ki"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sths7"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l648y"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aabpa"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju3a3"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkiue"]
+atlas = SubResource("CompressedTexture2D_f10o0")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dtmn6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fu50o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v03pb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_koqy1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s635g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7urqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7rk6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8aogn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v77fk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lngoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ropuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0j0nc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y77ki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sths7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l648y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aabpa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju3a3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkiue")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_41pjq"]
+radius = 8.61538
+height = 19.6923
+
+[node name="CollectableApple" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(1.6875, 1.625)
+sprite_frames = SubResource("SpriteFrames_dtmn6")
+frame_progress = 0.668744
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(1.6875, 1.625)
+shape = SubResource("CapsuleShape2D_41pjq")

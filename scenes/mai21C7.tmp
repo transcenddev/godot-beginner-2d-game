@@ -1,9 +1,9 @@
 [gd_scene load_steps=41 format=3 uid="uid://bigvbrt7412lu"]
 
 [ext_resource type="Script" path="res://scenes/main_character.gd" id="1_l103m"]
-[ext_resource type="Texture2D" uid="uid://bq38euamvr5jv" path="res://assets/Idle (32x32).png" id="2_wx855"]
-[ext_resource type="Texture2D" uid="uid://dgipstdjc8q10" path="res://assets/Jump (32x32).png" id="3_6dpej"]
-[ext_resource type="Texture2D" uid="uid://dmy0pe4sude1l" path="res://assets/Run (32x32).png" id="4_gta5k"]
+[ext_resource type="Texture2D" uid="uid://bq38euamvr5jv" path="res://Idle (32x32).png" id="2_wx855"]
+[ext_resource type="Texture2D" uid="uid://dgipstdjc8q10" path="res://Jump (32x32).png" id="3_6dpej"]
+[ext_resource type="Texture2D" uid="uid://dmy0pe4sude1l" path="res://Run (32x32).png" id="4_gta5k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mem31"]
 atlas = ExtResource("2_wx855")
@@ -265,8 +265,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xwtjg"]
-radius = 20.0
-height = 48.0
+radius = 17.0
+height = 50.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
@@ -274,11 +274,11 @@ script = ExtResource("1_l103m")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(11, 16)
-scale = Vector2(1.6875, 2)
+position = Vector2(11, 14.5)
+scale = Vector2(1.6875, 1.90625)
 sprite_frames = SubResource("SpriteFrames_dwfxe")
-autoplay = "default"
+animation = &"running"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(11, 22)
+position = Vector2(12, 18)
 shape = SubResource("CapsuleShape2D_xwtjg")
